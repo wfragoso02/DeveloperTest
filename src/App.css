@@ -31,3 +31,42 @@
     transform: rotate(360deg);
   }
 }
+
+.logo{
+  background: #7ec2d4;
+  height: 3vh;
+  
+}
+.logoClass{
+  display: flex;
+  width: 100%;
+  background: #7ec2d4;
+}
+
+
+.home{
+  color: #183D5B
+}
+
+.subcriptions{
+  list-style-type: none;
+  display:flex;
+  justify-content: column;
+}
+.subcriptionsList{
+  border: 1px solid #183D5B;
+  margin: 2px;
+  border-radius: 5px;
+
+}
+.subcriptionsSubmit{
+  cursor: pointer;
+}
+
+.subcriptionsSubmitContainer{
+  width: 100%;
+  background: #669dac;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
