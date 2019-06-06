@@ -54,19 +54,41 @@
   justify-content: column;
 }
 .subcriptionsList{
+  position: relative;
   border: 1px solid #183D5B;
-  margin: 2px;
+  margin: 2vw;
   border-radius: 5px;
+  width: 25vw;
 
 }
 .subcriptionsSubmit{
+  background: #669dac;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
   cursor: pointer;
+  color: white;
+}
+a{  
+  text-decoration: none;
 }
 
 .subcriptionsSubmitContainer{
   width: 100%;
   background: #669dac;
   height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.subcriptionsTitle{
+  position: absolute;
+  top: -3.5vw;
+  background: white;
+  padding: 3px;
+}
+
+.title{
   display: flex;
   justify-content: center;
 }

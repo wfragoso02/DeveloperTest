@@ -1,15 +1,24 @@
 import React from 'react';
+import data from '../Data/data';
 
 
 class Level extends React.Component{
-    // constructor(props){
-    //     super(props);
-    // }
+
 
     render(){
+        const level = data[this.props.match.params.level]
         return(
 
             <div>
+                name: {level.name}
+                <br/>
+                price: ${level.price}
+                <br/>
+                DO: {level.credits.do}
+                <br/>
+                Pa: {level.credits.pa}
+                <br/>
+                Nurse: {level.credits.nurse}
                 <form action="">
                     <input type="text"/>
                     <input type="text"/>

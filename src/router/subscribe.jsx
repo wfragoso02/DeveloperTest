@@ -7,17 +7,19 @@ export default () => {
     const levelsReturn = levels.map((key, idx) => {
         return(
             <li key={idx} className="subcriptionsList">
-                <h1>{data[key]["name"]}</h1>
-                <h3>12 Month Subscription</h3>
+                <div className="title">
+                    <h1 className="subcriptionsTitle">{data[key]["name"]}</h1>
+                </div>
+                <h3 style={{padding: '2px'}}>12 Month Subscription</h3>
                 <h3>${data[key]["price"]}</h3>
                 <br/>
                 <h6>Includes Certificate of Completion</h6>
                 <h6>{data[key]["credits"]["do"]} CME Credits for DO</h6>
                 <h6>{data[key]["credits"]["pa"]} CME credits for PA</h6>
                 <h6>{data[key]["credits"]["nurse"]} CNE credits for Nurses</h6>
-                <div className="subcriptionsSubmitContainer">
-                    <Link className="subcriptionsSubmit" to={`${key}`}>SELECT</Link>
-                </div>
+                <Link to={`${key}`} className="subcriptionsSubmitContainer">
+                    <button className="subcriptionsSubmit" >SELECT</button>
+                </Link>
             </li>
         )
     })
